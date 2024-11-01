@@ -1,0 +1,101 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model DateSeq {
+  date DateTime @id @db.Date
+  seq  Int
+
+  @@map("date_seq")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model Member {
+  memberNo   Int          @id(map: "PK_0bb4ae4465f59835c0158bf9a87") @default(autoincrement()) @map("member_no")
+  naverId    String?      @map("naver_id") @db.VarChar(64)
+  kakaoId    String?      @map("kakao_id") @db.VarChar(64)
+  googleId   String?      @map("google_id") @db.VarChar(64)
+  memberName String?      @map("member_name") @db.VarChar(80)
+  nickName   String?      @map("nick_name") @db.VarChar(64)
+  birthday   DateTime?    @db.Timestamp(6)
+  gender     String?      @db.VarChar(1)
+  email      String       @unique(map: "unique_member_email") @db.VarChar(80)
+  mobile     String?      @db.VarChar(20)
+  state      String       @default("U") @db.VarChar(1)
+  regDttm    DateTime     @default(dbgenerated("'2024-10-09 08:51:45.574'::timestamp without time zone")) @map("reg_dttm") @db.Timestamp(6)
+  updDttm    DateTime     @default(dbgenerated("'2024-10-09 08:51:45.574'::timestamp without time zone")) @map("upd_dttm") @db.Timestamp(6)
+  memberGift MemberGift[]
+
+  @@index([email], map: "IDX_4678079964ab375b2b31849456")
+  @@index([mobile], map: "IDX_48f6655f1d403321847cb2234c")
+  @@index([naverId], map: "IDX_55f21800adf816eccb3d329130")
+  @@index([googleId], map: "IDX_bb3c5e8cabda10f86bfe7f4cd9")
+  @@index([kakaoId], map: "IDX_c10ef3043e14b08fddf31723d3")
+  @@map("member")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model Purchase {
+  storeNo      Int          @map("store_no")
+  giftNo       Int          @map("gift_no")
+  giftId       String?      @map("gift_id") @db.VarChar(64)
+  seqNo        Int?         @map("seq_no")
+  validDttm    DateTime?    @map("valid_dttm") @db.Timestamp(6)
+  gifterMobile String?      @map("gifter_mobile") @db.VarChar(20)
+  gifterEmail  String?      @map("gifter_email") @db.VarChar(80)
+  memo         String?      @db.VarChar(150)
+  sendMethod   String       @map("send_method") @db.VarChar(4)
+  payMethod    String       @map("pay_method") @db.VarChar(4)
+  pgId         Int?         @map("pg_id")
+  pgCode       String?      @map("pg_code") @db.VarChar(64)
+  state        String       @default("C") @db.VarChar(1)
+  payDttm      DateTime     @default(dbgenerated("'2024-10-09 08:51:46.339'::timestamp without time zone")) @map("pay_dttm") @db.Timestamp(6)
+  regDttm      DateTime     @default(dbgenerated("'2024-10-09 08:51:46.339'::timestamp without time zone")) @map("reg_dttm") @db.Timestamp(6)
+  updDttm      DateTime     @default(dbgenerated("'2024-10-09 08:51:46.339'::timestamp without time zone")) @map("upd_dttm") @db.Timestamp(6)
+  gifterNo     Int          @map("gifter_no")
+  gifteeNo     Int?         @map("giftee_no")
+  gifteeMobile String?      @map("giftee_mobile") @db.VarChar(20)
+  gifteeEmail  String?      @map("giftee_email") @db.VarChar(80)
+  uuid         String?      @db.VarChar(36)
+  recvYn       String       @default("N") @map("recv_yn") @db.VarChar(1)
+  orderId      String?      @map("order_id") @db.VarChar(256)
+  paymentKey   String?      @map("payment_key") @db.VarChar(256)
+  id           Int          @id(map: "PK_86cc2ebeb9e17fc9c0774b05f69") @default(autoincrement())
+  purchaseNo   String       @unique(map: "unique_purchase_no") @map("purchase_no") @db.VarChar(80)
+  memberGift   MemberGift[]
+  gift         Gift         @relation(fields: [giftNo], references: [giftNo], onDelete: NoAction, onUpdate: NoAction, map: "fk_purchase_gift")
+  refund       Refund[]
+
+  @@index([uuid], map: "IDX_0ff3305315900c06066cc0d8c5")
+  @@index([giftId], map: "IDX_2123ebd21733ae1b8ffe798f54")
+  @@index([purchaseNo], map: "IDX_4b76d9edb4a84210c74a04be90")
+  @@index([paymentKey], map: "IDX_505880f229db0db532a5f6180c")
+  @@index([gifteeNo], map: "IDX_6bfff59554a67917575a18b485")
+  @@index([giftNo], map: "IDX_7cc591a83ce366c43e8f579471")
+  @@index([gifterNo], map: "IDX_9643e1729026bdbf0b0411d6a9")
+  @@index([orderId], map: "IDX_ad3e1c7b862f4043b103a6c8c6")
+  @@index([storeNo], map: "IDX_c998ec29b20250be283d435431")
+  @@map("purchase")
+}
+
+model Credential {
+  credentialNo Int        @id @default(autoincrement()) @map("credential_no")
+  memberGiftNo Int        @map("member_gift_no")
+  credentialId String     @map("credential_id") @db.VarChar(36)
+  uuid         String     @db.VarChar(36)
+  purchaseNo   String     @map("purchase_no") @db.VarChar(80)
+  memberNo     Int        @map("member_no")
+  vpYn         String?    @default("N") @map("vp_yn") @db.VarChar(1)
+  verified     Boolean?   @default(false)
+  delYn        String     @default("N") @map("del_yn") @db.VarChar(1)
+  content      Json?
+  regDttm      DateTime?  @default(now()) @map("reg_dttm") @db.Timestamptz(6)
+  member_gift  MemberGift @relation(fields: [memberGiftNo], references: [memberGiftNo], onDelete: NoAction, onUpdate: NoAction, map: "fk_credential_member_gift")
+
+  @@map("credential")
+}
