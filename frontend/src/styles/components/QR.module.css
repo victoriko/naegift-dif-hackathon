@@ -1,0 +1,66 @@
+.qrContainer,
+.qrContainer * {
+  box-sizing: border-box;
+}
+.qrContainer {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.qrFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.qr {
+  color: #222222;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.qr-span {
+  color: #222222;
+  font-size: 16px;
+  line-height: 22px;
+}
+.regular {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.qrImageFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.qrImage {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: cover;
+}

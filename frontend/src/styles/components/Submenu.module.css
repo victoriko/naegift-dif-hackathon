@@ -1,0 +1,64 @@
+.submenu,
+.submenu * {
+  box-sizing: border-box;
+}
+.submenu {
+  background: #ffffff;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  padding: 15px 15px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.buttonSelected {
+  background: #222222;
+  border-radius: 500px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 34px;
+  position: relative;
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button {
+  background: #dddddd;
+  border-radius: 500px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 34px;
+  position: relative;
+
+  color: #777777;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}

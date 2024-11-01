@@ -1,0 +1,62 @@
+.button {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+}
+.text {
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Icon {
+  flex-shrink: 0;
+  width: 20px;
+  position: relative;
+  object-fit: cover;
+}
+
+.orange {
+  background: #ff4400;
+  color: #ffffff;
+}
+
+.yellow {
+  background: #fae100;
+  color: #222222;
+}
+.green {
+  background: #03c75a;
+  color: #ffffff;
+}
+.grayBorderWhite {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  color: #222222;
+}
+.darkGrayBorderWhite {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #777777;
+  border-width: 1px;
+  color: #777777;
+}
+.gray {
+  background: #dddddd;
+  color: #222222;
+}
+.black {
+  background: #222222;
+  color: #ffffff;
+}

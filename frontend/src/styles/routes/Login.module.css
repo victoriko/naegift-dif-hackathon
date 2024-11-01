@@ -1,0 +1,65 @@
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  padding: 100px 30px 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.logoFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.imageFrame {
+  flex-shrink: 0;
+  width: 107.84px;
+  height: 65px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit:contain;
+}
+.titleFrame {
+  flex-shrink: 0;
+  width: 200px;
+  height: 26px;
+  position: static;
+}
+.title {
+  color: #222222;
+  text-align: left;
+  font-size: 17.3px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 68.5px);
+  top: 60px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}

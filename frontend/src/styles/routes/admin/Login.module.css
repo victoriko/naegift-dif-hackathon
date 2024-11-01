@@ -1,0 +1,174 @@
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  padding: 100px 30px 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.logoFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.imageFrame {
+  flex-shrink: 0;
+  width: 107.84px;
+  height: 65px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit:contain;
+}
+.titleFrame {
+  flex-shrink: 0;
+  width: 200px;
+  height: 26px;
+  position: static;
+}
+.title {
+  color: #222222;
+  text-align: left;
+  font-size: 17.3px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 68.5px);
+  top: 60px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.adminLogin {
+  color: #222222;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  position: relative;
+}
+.formFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.input {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 46px;
+  position: relative;
+  padding-left: 10px; /* 값 입력창 왼쪽 여백 설정 */
+}
+.optionContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.optionFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.optionText {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.unchecked {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.checked {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
+.div15 {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.input2 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+  
+}

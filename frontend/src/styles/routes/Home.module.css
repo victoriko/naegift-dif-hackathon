@@ -1,0 +1,14 @@
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}

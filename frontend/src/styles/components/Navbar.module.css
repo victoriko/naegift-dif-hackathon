@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  height: 50px;
+  background: white;
+  border-bottom: 1px #dddddd solid;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navItems {
+  flex: 1 1 0;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+
+  color: #222222;
+  font-size: 14px;
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  line-height: 14px;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+
+.navItemsSelected {
+  flex: 1 1 0;
+  align-self: stretch;
+  border-bottom: 1px #ff4400 solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+
+  color: #ff4400;
+  font-size: 14px;
+  font-family: Noto Sans KR;
+  font-weight: 500;
+  line-height: 14px;
+  word-wrap: break-word;
+  text-decoration: none;
+}

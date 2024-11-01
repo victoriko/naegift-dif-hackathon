@@ -1,0 +1,133 @@
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.imageFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.image {
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: cover;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.titleContentFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title {
+  color: #222222;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.content {
+  color: #777777;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.cost {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.information {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.expiration {
+  position: relative;
+  align-self: stretch;
+}
+.conditions {
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.giftId {
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}

@@ -1,0 +1,133 @@
+.iconFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.cancelIcon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.informationFrame {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.informationText {
+  color: #ff4400;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formContainer {
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px 0px 0px 0px;
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.formTable {
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0px 0px 1px 0px;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.field {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 70px;
+  position: relative;
+}
+.fieldText {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content {
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  height: 40px;
+  position: relative;
+}
+.contentText {
+  color: #777777;
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.buttonsPair,
+.buttonsPair * {
+  box-sizing: border-box;
+}
+.buttonsPair {
+  border-radius: 2px;
+  padding: 15px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}

@@ -1,0 +1,491 @@
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.itemFrame {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.div4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.sentDiv4 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div5 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div6 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame5 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.img-01 {
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  object-fit: cover;
+}
+.frame4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.frame3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div7 {
+  color: #222222;
+  text-align: left;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+}
+.div8 {
+  color: #777777;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.cost {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div9 {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.expiration {
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.conditions {
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.giftId {
+  color: #777777;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.div10 {
+  padding: 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div11 {
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0px 0px 1px 0px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+}
+.message {
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.messageSpan {
+  color: #222222;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.messageSpan2 {
+  color: #555555;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.messageLabel{
+  margin-left:50vw;
+  font-size: 12px;
+  color: #555555;
+
+}
+.div12 {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.textarea {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 80px;
+  position: relative;
+  resize: none;
+  outline: none;
+}
+.div13 {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.div14 {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div15 {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.list {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0px 0px 1px 0px;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.option {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+}
+.check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
+
+.div16 {
+  color: #222222;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.phoneEmail {
+  color: #222222;
+  text-align: right;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+
+.list2 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0px 0px 1px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.link {
+  color: #222222;
+  text-align: right;
+  font-size: 8px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.messageInfo {
+  color: #222222;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+}
+.message2 {
+  color: #222222;
+  text-align: right;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.check2 {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  object-fit: cover;
+}
+.sms {
+  color: #222222;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.input2 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 50px;
+  position: relative;
+  
+}
+.div17 {
+  color: #777777;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.div18 {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div19 {
+  background: #dddddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 50px;
+  position: relative;
+}
+.div20 {
+  color: #222222;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div21 {
+  background: #ff4400;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 50px;
+  position: relative;
+}
+.div22 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -1,0 +1,20 @@
+.quiteZone {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 16px;
+}
+.line {
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 8px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
